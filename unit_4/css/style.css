@@ -1,0 +1,112 @@
+
+body {
+	margin: 0;
+	background-color: #fff;
+	color: #000;
+	
+}
+
+h1 {
+	font-family: 'Libre Franklin', sans-serif;
+	color: #fff;
+}
+
+h2 {
+	font-family: 'Libre Franklin', sans-serif;
+	color: #ff5a3b;
+}
+
+
+a:link {
+	text-decoration: none;
+}
+
+#intro {
+	margin: 0px;
+	padding: 25px 5px 5px 20px;
+	background: url("../images/messydesk.jpg");
+	background-size: cover;
+	height: 400px;
+	color: #fff;
+}
+
+#nav ul {
+	list-style: none;
+}
+
+#nav li {
+	padding: 0.5em;
+}
+
+#nav a {
+	color: #fff;
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 1.25em;
+}
+
+#nav a:hover {
+	color: #ff5a3b;
+}
+
+#work {
+	text-align: center;
+	height: 175px;
+}
+
+#work hr {
+	width: 300px;
+	color: #fff;
+	height: 1px;
+	border: 0;
+	background-color: #ff5a3b;
+}
+
+#work img {
+	display: inline;
+	padding: 20px 20px 20px 20px;
+}
+
+#about {
+	text-align: left;
+	margin-top: 100px;
+	padding: 20px 10px 10px 20px;
+
+}
+
+#about p {
+	color: 000;
+	font-family: 'Lora', serif;
+}
+
+#about-photo {
+	float: right;
+	padding: 40px;
+}
+
+#about ul {
+	list-style: none;
+	font-family: 'Lora', serif;
+	font-size: 1em;
+}
+
+#contact {
+	background-color: #d6d6d6;
+	padding: 25px 10px 10px 55px;
+	height: 50px;
+	clear: both;
+	color: #5e5e5e;
+}
+
+#contact p {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#contact a {
+	color: #5e5e5e;
+}
+
+#contact a:hover {
+	text-decoration: underline;
+}
