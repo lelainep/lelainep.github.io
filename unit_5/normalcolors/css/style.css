@@ -30,7 +30,6 @@ h2 {
 
 nav {
 	background-color: #fff;
-	float: right;
 	display: block;
 	padding: 1em;
 }
@@ -98,7 +97,7 @@ footer {
 
 #name {
 	font-size: 1.5em;
-	letter-spacing: 0.4em;
+	letter-spacing: 0.3em;
 
 }
 
@@ -133,7 +132,7 @@ footer {
 }
 
 .clearfix:after {
-	content: ".";
+	content: " ";
 	visibility: hidden;
 	display: block;
 	height: 0;
@@ -147,15 +146,21 @@ footer {
 
 }
 
-#about h1 {
+#bio h1 {
 	color: #ff5a3b;
 	font-size: 2em;
 }
 
-#about p {
+#bio p {
 	padding: 1em;
 	color: #000;
 	font-family: 'Domine', serif;
+}
+
+#bio ul {
+	list-style: none;
+	font-family: 'Domine', serif;
+	font-size: 1em;
 }
 
 #aboutimg {
@@ -167,12 +172,6 @@ footer {
 #aboutimg img {
 	width: 25%;
 	padding: 2em;
-}
-
-#about ul {
-	list-style: none;
-	font-family: 'Domine', serif;
-	font-size: 1em;
 }
 
 #contact p {
