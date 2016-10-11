@@ -1,0 +1,293 @@
+*, 
+*:before, 
+*:after {    
+	margin: 0;     
+	padding: 0;     
+	-moz-box-sizing: border-box;     
+	-webkit-box-sizing: border-box;     
+	box-sizing: border-box; 
+}
+
+/***************
+GENERAL
+***************/
+
+#wrapper {
+	margin: 0;
+	padding: 0;
+	background-color: #ccc;
+}
+
+.clearfix:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+body {
+	background-color: #fff;	
+}
+
+.shadow {
+	-webkit-box-shadow: 0 8px 6px -6px #444;
+	-moz-box-shadow: 0 8px 6px -6px #444;
+	box-shadow: 0 8px 6px -6px #444;
+}
+
+/***************
+FONTS
+***************/
+
+.section-heading {
+	font-family: 'Roboto', sans-serif;
+	color: #f70200;
+	font-size: 2em;
+}
+
+.main-heading {
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.4em;
+}
+
+.secondary-heading {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.25em;
+	color: #fff;
+}
+
+.content-text {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.small-font {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.85em;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+
+/***************
+HEADER
+***************/
+
+header {
+	background-color: #fff;
+	display: block;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#logo {
+	float: left;
+	margin: 0;
+}
+
+#logo img {
+	max-width: 100%;
+}
+
+
+/***************
+NAVIGATION
+***************/
+
+nav {
+	float: right;
+
+}
+
+nav ul {
+	list-style: none;
+	margin: 0 2em;
+}
+
+nav li {
+	display: inline-block;
+	padding: 2em 1em;
+}
+
+nav a {
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5em;
+}
+
+nav a:hover {
+	color: #F70200;
+}
+
+/***************
+HERO IMAGE
+***************/
+
+#intro {
+	margin-top: 5em;
+	background: url("../images/messydesk.jpg"); 
+	background-size: cover;
+	height: 300px;
+}
+
+#intro h1 {
+	padding: 2em 1em 0 3em;
+	text-align: left;
+}
+
+#name {
+	font-size: 1.5em;
+	letter-spacing: 0.34em;
+}
+
+/***************
+WORK SECTION
+***************/
+
+#work {
+	background-color: #fff;
+}
+
+#work h1 {
+	text-align: center;
+	padding: 2em 0 0.5em 0;
+
+}
+
+#work hr {
+	margin: 0 auto;
+	width: 300px;
+	color: #fff;
+	height: 1px;
+	border: 0;
+	background-color: #F70200;
+}
+
+#work-gallery {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#work-gallery li {
+	float: left;
+	display: inline;
+	width: 15%;
+	margin: 5%;
+}
+
+
+#work-gallery li p {
+	margin: 0;
+	padding: 5%;
+	font-size: 1em;
+	color: #5e5e5e;
+}
+
+/***************
+ABOUT SECTION
+***************/
+
+aside {
+	background-color: #F70200;
+}
+
+#about {
+	width: 100%;
+}
+
+
+#bio {
+	background-color: #efefef;
+	float: left;
+	width: 60%;
+	height: 350px;
+
+}
+
+#bio h1 {
+	padding-left: 0.5em;
+	margin-top: 1em;
+}
+
+#bio p {
+	margin: 1em 3em 1em 1em;
+	color: #000;
+}
+
+#bio ul {
+	padding: 1em;
+	list-style: none;
+	font-size: 1em;
+}
+
+#aboutimg {
+	float: right;
+	width: 40%;
+	height: 350px;
+}
+
+#aboutimg img {
+	display: block;
+	max-width: 220px;
+	margin: 0 auto;
+	padding: 3em 0;
+}
+
+/***************
+FOOTER
+***************/
+
+footer {
+	background-color: #5e5e5e;
+	padding: 2em 1em 1em 3em;
+	clear: both;
+	color: #fff;
+}
+
+
+#contact p {
+	float: right;
+	display: inline-block;
+	margin: 0 10em 0 0;
+}
+
+.contactinfo {
+	float: left;
+	list-style: none;
+	font-size: 1em;
+	margin: 1em 1em;
+	padding: 1em 0 0;
+}
+
+.contactinfo li {
+	display: inline-block;
+	padding: 0 .75em;
+}
+
+.contactinfo li img {
+	max-width: 40px;
+}
+
+.small-font a {
+	color: #fff;
+}
+
+.small-fonta:link {
+	color: #fff;
+}
+
+.small-font a:visited {
+	color: #fff;
+}
+
+.small-font a:active {
+	color: #fff;
+}
+
