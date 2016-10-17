@@ -1,22 +1,29 @@
-*, 
-*:before, 
-*:after {    
-	margin: 0;     
-	padding: 0;     
-	-moz-box-sizing: border-box;     
-	-webkit-box-sizing: border-box;     
-	box-sizing: border-box; 
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /***************
 GENERAL
-***************/
+**************/
 
-#wrapper {
-	margin: 0;
-	padding: 0;
+body {
 	background-color: #ccc;
 }
+
+#wrapper {
+	margin: 0
+	padding: 0;
+	max-width: 1260px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+
 
 .clearfix:after {
 	content: " ";
@@ -26,45 +33,48 @@ GENERAL
 	clear: both;
 }
 
-body {
-	background-color: #fff;	
-}
-
 .shadow {
 	-webkit-box-shadow: 0 8px 6px -6px #444;
 	-moz-box-shadow: 0 8px 6px -6px #444;
 	box-shadow: 0 8px 6px -6px #444;
 }
 
+header, #intro, #work, #about, #contact {
+	width: 100%;
+}
+
 /***************
 FONTS
-***************/
+**************/
+
+.section-heading, .main-heading, .secondary-heading {
+	font-family: 'Roboto', sans-serif;
+}
+
+.main-heading, .secondary-heading {
+	color: #fff;
+}
 
 .section-heading {
-	font-family: 'Roboto', sans-serif;
 	color: #f70200;
 	font-size: 2em;
 }
 
 .main-heading {
-	font-family: 'Roboto', sans-serif;
-	color: #fff;
 	text-transform: uppercase;
 	font-size: 1.4em;
+	text-shadow: 2px 2px 3px #000;
 }
 
 .secondary-heading {
-	font-family: 'Roboto', sans-serif;
 	font-size: 1.25em;
-	color: #fff;
 }
 
-.content-text {
+.content-text, .gallery-text, .small-font {
 	font-family: 'Open Sans', sans-serif;
 }
 
 .small-font {
-	font-family: 'Open Sans', sans-serif;
 	font-size: 0.85em;
 }
 
@@ -80,7 +90,6 @@ HEADER
 header {
 	background-color: #fff;
 	display: block;
-	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -102,7 +111,6 @@ NAVIGATION
 
 nav {
 	float: right;
-
 }
 
 nav ul {
@@ -130,7 +138,9 @@ HERO IMAGE
 ***************/
 
 #intro {
+	width: 100%;
 	margin-top: 5em;
+	background-color: #5e5e5e;
 	background: url("../images/messydesk.jpg"); 
 	background-size: cover;
 	height: 300px;
@@ -151,7 +161,7 @@ WORK SECTION
 ***************/
 
 #work {
-	background-color: #fff;
+	width: 100%;
 }
 
 #work h1 {
@@ -170,72 +180,80 @@ WORK SECTION
 }
 
 #work-gallery {
-	margin: 0;
-	padding: 0;
+	width: 80%;
+	margin: 0 auto;
+	padding: 2em 0;
 	list-style: none;
 }
 
-#work-gallery li {
+/*#work-gallery li {
 	float: left;
-	display: inline;
-	width: 15%;
-	margin: 5%;
+	display: block;
+	width: 25%;
+	padding: 1em;
+}*/
+
+#work-gallery li {
+	width: 200px;
+	margin: 1em;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#work-gallery li img {
+	width: 100%;
+	border-radius: 5%;
 }
 
 
 #work-gallery li p {
 	margin: 0;
-	padding: 5%;
-	font-size: 1em;
+	padding: 5% 5% 3% 0;
 	color: #5e5e5e;
 }
 
 /***************
 ABOUT SECTION
 ***************/
-
-aside {
-	background-color: #F70200;
-}
-
 #about {
 	width: 100%;
+	background-color: #efefef;
 }
 
 
 #bio {
-	background-color: #efefef;
 	float: left;
 	width: 60%;
-	height: 350px;
+	line-height: 1.35;
+	padding: 2em 2em 4em;
 
-}
-
-#bio h1 {
-	padding-left: 0.5em;
-	margin-top: 1em;
 }
 
 #bio p {
-	margin: 1em 3em 1em 1em;
+	margin: 1em 0;
 	color: #000;
 }
 
 #bio ul {
-	padding: 1em;
 	list-style: none;
 	font-size: 1em;
+}
+
+
+aside {
+	background-color: #F70200;
+	padding: 1em 0;
 }
 
 #aboutimg {
 	float: right;
 	width: 40%;
-	height: 350px;
 }
 
 #aboutimg img {
 	display: block;
-	max-width: 220px;
+	max-width: 250px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 3em 0;
 }
@@ -246,24 +264,27 @@ FOOTER
 
 footer {
 	background-color: #5e5e5e;
-	padding: 2em 1em 1em 3em;
+	/*padding: 2em 1em 1em 3em;*/
 	clear: both;
 	color: #fff;
 }
 
+#contact h3 {
+	padding: 1em;
+}
 
 #contact p {
 	float: right;
 	display: inline-block;
-	margin: 0 10em 0 0;
+	margin: 0 3em 0 0;
 }
 
 .contactinfo {
 	float: left;
 	list-style: none;
 	font-size: 1em;
-	margin: 1em 1em;
-	padding: 1em 0 0;
+	margin: 0 0 2em 1em;
+	padding: 0;
 }
 
 .contactinfo li {
@@ -273,21 +294,80 @@ footer {
 
 .contactinfo li img {
 	max-width: 40px;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
 }
 
-.small-font a {
+.contactinfo li img:hover {
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+.small-font a, .small-font a:link, .small-font a:visited, .small-font a:active  {
 	color: #fff;
 }
 
-.small-fonta:link {
-	color: #fff;
+/***************
+RESPONSIVE
+***************/
+
+@media screen and (max-width: 880px) {
+	#bio {
+		padding: 2em;
+	}
+
+	#aboutimg img {
+		max-width: 220px;
+	}
 }
 
-.small-font a:visited {
-	color: #fff;
+@media screen and (max-width: 767px) {
+  	.content-text {
+  		font-size: .75;
+  	}
+	#intro {
+		background: linear-gradient(
+				rgba(94, 94, 94, 0.5),
+				rgba(94, 94, 94, 0.5)),
+				url("../images/messydesk.jpg");
+		background-size: cover;
+	}
+
+	#bio {
+		display: block;
+		width: 100%;
+	}
+
+	#aboutimg {
+		display: block;
+		width: 100%;
+	}
+
+	#aboutimg img {
+		max-width: 300px;
+	}
 }
 
-.small-font a:active {
-	color: #fff;
+@media screen and (max-width: 586px) {
+	nav li {
+		padding: 2em .75em;
+	}
+
 }
 
+@media screen and (max-width: 450px) {
+	nav li {
+	display: block;
+	text-align: right;
+	padding: .5em 0;
+	}
+
+	nav ul {
+		margin: .5em 1em 0;
+	}
+
+	#intro h1 {
+	padding-top: 3.5em;
+}
+
+}
