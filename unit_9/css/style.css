@@ -8,22 +8,9 @@
 	box-sizing: border-box;
 }
 
-/***************
+/****************************************
 GENERAL
-**************/
-
-body {
-	background-color: #ccc;
-}
-
-#wrapper {
-	margin: 0
-	padding: 0;
-	max-width: 1260px;
-	background-color: #fff;
-	margin: 0 auto;
-}
-
+*****************************************/
 
 .clearfix:after {
 	content: " ";
@@ -31,6 +18,25 @@ body {
 	display: block;
 	height: 0;
 	clear: both;
+}
+
+body {
+	background-color: #ccc;
+}
+
+#wrapper {
+	padding: 0;
+	max-width: 1260px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+#inner-wrapper {
+	width: 100%;
+	max-width: 1260px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #fff;
 }
 
 .shadow {
@@ -43,15 +49,18 @@ header, #intro, #work, #about, #contact {
 	width: 100%;
 }
 
-/***************
+/****************************************
 FONTS
-**************/
+*****************************************/
 
-.section-heading, .main-heading, .secondary-heading {
+.section-heading, 
+.main-heading, 
+.secondary-heading {
 	font-family: 'Roboto', sans-serif;
 }
 
-.main-heading, .secondary-heading {
+.main-heading, 
+.secondary-heading {
 	color: #fff;
 }
 
@@ -70,7 +79,9 @@ FONTS
 	font-size: 1.25em;
 }
 
-.content-text, .gallery-text, .small-font {
+.content-text, 
+.gallery-text, 
+.small-font {
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -82,10 +93,29 @@ a:link {
 	text-decoration: none;
 }
 
+nav a {
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5em;
+}
 
-/***************
-HEADER
-***************/
+nav a:hover {
+	color: #F70200;
+}
+
+.small-font a, 
+.small-font a:link, 
+.small-font a:visited, 
+.small-font a:active  {
+	color: #fff;
+}
+
+
+/****************************************
+LAYOUT
+*****************************************/
+
+/* ------------ HEADER ------------ */
 
 header {
 	background-color: #fff;
@@ -105,9 +135,7 @@ header {
 }
 
 
-/***************
-NAVIGATION
-***************/
+/* ------------ NAVIGATION ------------ */
 
 nav {
 	float: right;
@@ -123,19 +151,8 @@ nav li {
 	padding: 2em 1em;
 }
 
-nav a {
-	color: #000;
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.5em;
-}
 
-nav a:hover {
-	color: #F70200;
-}
-
-/***************
-HERO IMAGE
-***************/
+/* ------------ HERO IMAGE ------------ */
 
 #intro {
 	width: 100%;
@@ -156,9 +173,7 @@ HERO IMAGE
 	letter-spacing: 0.34em;
 }
 
-/***************
-WORK SECTION
-***************/
+/* ------------ WORK SECTION ------------ */
 
 #work {
 	width: 100%;
@@ -171,8 +186,9 @@ WORK SECTION
 }
 
 #work hr {
-	margin: 0 auto;
-	width: 300px;
+	margin: 1em auto;
+	max-width: 500px;
+	width: 75%;
 	color: #fff;
 	height: 1px;
 	border: 0;
@@ -183,21 +199,15 @@ WORK SECTION
 	width: 80%;
 	margin: 0 auto;
 	padding: 2em 0;
+	display: inline;
 	list-style: none;
 }
 
-/*#work-gallery li {
-	float: left;
-	display: block;
+#work-gallery li {
 	width: 25%;
 	padding: 1em;
-}*/
-
-#work-gallery li {
-	width: 200px;
-	margin: 1em;
-	display: inline-block;
-	vertical-align: top;
+	display: block;
+	float: left;
 }
 
 #work-gallery li img {
@@ -212,9 +222,8 @@ WORK SECTION
 	color: #5e5e5e;
 }
 
-/***************
-ABOUT SECTION
-***************/
+/* ------------ ABOUT SECTION ------------ */
+
 #about {
 	width: 100%;
 	background-color: #efefef;
@@ -223,10 +232,9 @@ ABOUT SECTION
 
 #bio {
 	float: left;
-	width: 60%;
+	width: 70%;
 	line-height: 1.35;
-	padding: 2em 2em 4em;
-
+	padding: 2em;
 }
 
 #bio p {
@@ -239,7 +247,6 @@ ABOUT SECTION
 	font-size: 1em;
 }
 
-
 aside {
 	background-color: #F70200;
 	padding: 1em 0;
@@ -247,30 +254,24 @@ aside {
 
 #aboutimg {
 	float: right;
-	width: 40%;
+	width: 30%;
 }
 
 #aboutimg img {
 	display: block;
-	max-width: 250px;
+	max-width: 200px;
 	width: 100%;
 	margin: 0 auto;
-	padding: 3em 0;
+	padding: 3em .5em;
 }
 
-/***************
-FOOTER
-***************/
+/* ------------ FOOTER ------------ */
 
 footer {
 	background-color: #5e5e5e;
-	/*padding: 2em 1em 1em 3em;*/
+	padding: 2em 1em 1em 3em;
 	clear: both;
 	color: #fff;
-}
-
-#contact h3 {
-	padding: 1em;
 }
 
 #contact p {
@@ -303,28 +304,33 @@ footer {
 	filter: alpha(opacity=100);
 }
 
-.small-font a, .small-font a:link, .small-font a:visited, .small-font a:active  {
-	color: #fff;
-}
 
-/***************
-RESPONSIVE
-***************/
 
-@media screen and (max-width: 880px) {
+/****************************************
+MEDIA QUERIES
+*****************************************/
+
+@media screen and (max-width: 915px) {
+
+	/* Reduce img size*/
 	#bio {
-		padding: 2em;
+		padding: 1.5em;
 	}
 
 	#aboutimg img {
-		max-width: 220px;
+		max-width: 175px;
+		width: 90%;
+		padding: 4.25em .5em;
 	}
 }
 
 @media screen and (max-width: 767px) {
+
   	.content-text {
   		font-size: .75;
   	}
+
+  	/* Increase font-bckgrd contrast*/
 	#intro {
 		background: linear-gradient(
 				rgba(94, 94, 94, 0.5),
@@ -333,6 +339,12 @@ RESPONSIVE
 		background-size: cover;
 	}
 
+	#work-gallery li {
+		width:45%;
+		padding: 2.5%;
+	}
+
+	/* About moves to single column */
 	#bio {
 		display: block;
 		width: 100%;
@@ -344,18 +356,31 @@ RESPONSIVE
 	}
 
 	#aboutimg img {
-		max-width: 300px;
+		max-width: 250px;
 	}
 }
 
+
 @media screen and (max-width: 586px) {
+	/* Reduce nav and logo sizes */
+	nav ul {
+		margin: 0 1em;
+	}
 	nav li {
 		padding: 2em .75em;
 	}
 
+	nav a {
+		font-size: 1.25em;
+	}
+
+	#logo img {
+	max-width: 90%;
+	}
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 475px) {
+	/* Nav becomes vertical */
 	nav li {
 	display: block;
 	text-align: right;
@@ -363,11 +388,24 @@ RESPONSIVE
 	}
 
 	nav ul {
-		margin: .5em 1em 0;
+		margin: 0 1em 0;
 	}
 
+	/* Bring h1 down below header */
 	#intro h1 {
 	padding-top: 3.5em;
-}
+	line-height: 1.25em;
+	}
 
+	/* Portfolio becomes single column*/
+	#work-gallery li {
+		width: 100%;
+	}
+
+	#work-gallery li img, #work-gallery li p {
+		display: block;
+		float: left;
+		width: 50%;
+		padding-left: 1em;
+		}
 }
