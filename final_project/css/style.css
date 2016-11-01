@@ -417,6 +417,10 @@ MEDIA QUERIES
 		width: 50%;
 		padding-left: 1em;
 		}
+
+	footer {
+		padding: 2em 1em 1em;
+	}
 }
 
 @media screen and (max-width: 348px) {
@@ -451,6 +455,20 @@ MEDIA QUERIES
 
 	.contactinfo li img {
 		max-width: 35px;
+	}
+
+}
+
+@media screen and (max-width: 300px) {
+	.contactinfo li {
+		display: block;
+		padding: 1em;
+		float: none;
+	}
+
+	.contactinfo p {
+		display: block;
+		float: none;
 	}
 
 }

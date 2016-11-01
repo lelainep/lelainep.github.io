@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Laura Pasch</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+	@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Roboto:400,500,900';
+	</style> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<header class="clearfix shadow">
+	<div id="inner-wrapper">
+	
+	<div id="logo">
+		<img src="images/lplogo.png" alt="lp logo" title="lp">
+	</div>
+
+	<nav>
+		<ul> 
+			<li><a href="#work">Work</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	</div>
+</header>
+
+<section id="intro">
+
+	<h1 class="main-heading"><span id="name">Laura Pasch</span><br>Front-End Web Development</h1>
+</section>
+
+<section id="work" class="clearfix">
+	<h1 class="section-heading">Work</h1>
+	<hr>
+		<ul id="work-gallery" class="gallery-text">
+			<li>
+				<img src="images/placeholder.png" alt="project 1" title="project 1">
+				<p>Omnis paulo id mei</p>
+			</li>
+			<li>
+				<img src="images/placeholder.png" alt="project 2" title="project 2">
+				<p>Lorem ipsum dolor sit amet, id ius</p>
+			</li>
+			<li>
+				<img src="images/placeholder.png" alt="project 3" title="project 3">
+				<p>Mea civibus volumus quaestio te</p>
+			</li>
+			<li>
+				<img src="images/placeholder.png" alt="project 4" title="project 4">
+				<p>Ea iriure animal has, nam ei inimicus honestatis.</p>
+			</li>
+			<li>
+				<img src="images/placeholder.png" alt="project 5" title="project 5">
+				<p>Usu dicit cetero salutatus in, everti option</p>
+			</li>
+			<li>
+				<img src="images/placeholder.png" alt="project 6" title="project 6">
+				<p>No ornatus alienum cum, tation aeterno usu ut,</p>
+			</li>
+			<li>
+				<img src="images/placeholder.png" alt="project 7" title="project 7">
+				<p>Ut nulla qualisque ocurreret sit.</p>
+			</li>
+		</ul>
+</section>
+
+
+<section id="about" class="clearfix">
+
+<article id="bio">
+	<h1 class="section-heading">About</h1>
+
+		<p class="content-text">I am a front-end developer based in Atlanta, Georgia. I create responsive websites using clean, organized code that conforms to W3C web standards. </p>
+
+		<ul class="content-text">
+			<li>Proficient in:</li>
+			<li>HTML5</li>
+			<li>CSS3</li>
+			<li>JavaScript</li>
+			<li>jQuery</li>
+		</ul>
+
+	</article>
+
+	<aside id="aboutimg">
+		<img src="images/lp.png" alt="about" title="">
+	</aside>
+
+</section>
+
+	<footer id="contact" class="clearfix">
+
+		<ul class="contactinfo">
+			<li><a href="#"><img src="images/email.png" alt=""></a></li>
+			<li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+			<li><a href="#"><img src="images/linkedin.png" alt=""></a></li>
+			<li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+		</ul>
+		<p class="small-font"><a href="#">TOP&uarr;</a></p>
+
+	</footer>
+
+</div>
+
+</body>
+
+</html>
